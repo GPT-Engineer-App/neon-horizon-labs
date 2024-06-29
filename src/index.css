@@ -43,4 +43,8 @@
     color: hsl(var(--neon-white));
     text-shadow: 0 0 10px hsl(var(--neon-white));
   }
+
+  .font-montserrat {
+    font-family: 'Montserrat', sans-serif;
+  }
 }
