@@ -7,12 +7,13 @@ import { Label } from '@/components/ui/label';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Separator } from '@/components/ui/separator';
+import MinimalistDesert from '/images/minimalist-desert.png';
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-black text-cyan-500 font-montserrat">
-      <header className="flex justify-between items-center p-6">
-        <img src="/icons/sunrise-icon.png" alt="Kotani Labs" className="h-12" />
+      <header className="flex justify-center items-center p-6">
+        <img src={MinimalistDesert} alt="Minimalist Desert" className="max-w-full h-auto" />
         <nav className="space-x-4">
           <Button variant="outline">Home</Button>
           <Button variant="outline">Services</Button>
@@ -20,13 +21,13 @@ const Index = () => {
           <Button variant="outline">Contact</Button>
         </nav>
       </header>
-      <main className="p-6 space-y-12">
-        <section className="text-center space-y-4">
+      <main className="p-6 space-y-12 flex flex-col items-center">
+        <section className="text-center space-y-4 w-full max-w-4xl">
           <h1 className="text-5xl font-bold text-neon-blue">Kotani Labs</h1>
           <p className="text-xl text-neon-white">Innovating the Future of Web 3 and Blockchain Technologies</p>
         </section>
         <Separator />
-        <section className="space-y-4">
+        <section className="space-y-4 w-full max-w-4xl">
           <Card>
             <CardHeader>
               <CardTitle>Our Services</CardTitle>
@@ -46,7 +47,7 @@ const Index = () => {
           </Card>
         </section>
         <Separator />
-        <section className="space-y-4">
+        <section className="space-y-4 w-full max-w-4xl">
           <Card>
             <CardHeader>
               <CardTitle>Horizon Hackerhouse Program</CardTitle>
@@ -59,7 +60,7 @@ const Index = () => {
           </Card>
         </section>
         <Separator />
-        <section className="space-y-4">
+        <section className="space-y-4 w-full max-w-4xl">
           <Card>
             <CardHeader>
               <CardTitle>Contact Us</CardTitle>
@@ -84,7 +85,7 @@ const Index = () => {
           </Card>
         </section>
       </main>
-      <footer className="text-center p-6">
+      <footer className="text-center p-6 w-full max-w-4xl">
         <p>&copy; 2023 Kotani Labs. All rights reserved.</p>
       </footer>
     </div>
