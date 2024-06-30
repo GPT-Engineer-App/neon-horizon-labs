@@ -1,5 +1,5 @@
 import React from 'react';
-import TransparentDesert from '/images/transparent-desert.png';
+import TransparentDesert from '/public/images/transparent-desert.png';
 
 const Index = () => {
   return (
